@@ -1,0 +1,62 @@
+#register{
+ width:400px;
+ background-color:#FFAD99;
+ margin:auto;
+ margin-top:40px;
+ box-shadow:0 0 3px #999;
+ padding:20px;
+ }
+#first_name{
+ padding:15px 0 10px 0px;
+ }
+ #last_name{
+ padding:15px 0 10px 0px;
+ }
+
+  .input_name{
+width:250px;
+ padding:2px;
+ font-size:18px;
+ margin-left:65px;
+ }
+
+#email_form{
+ padding:15px 0 10px 0px;
+ }
+ .input_email{
+ width:250px;
+ padding:2px;
+ font-size:18px;
+ margin-left:78px;
+ }
+
+ #password_form{
+ padding:10px 0 10px 0px;
+ }
+
+.input_password{
+ width:250px;
+ padding:2px;
+ font-size:18px;
+ margin-left:73px;
+ }
+ .input_reenter{
+ width:250px;
+ padding:2px;
+ font-size:18px;
+ margin-left:15px;
+ }
+   .input_submit{
+ width:85px;
+ height:28px;
+ margin-left:240px;
+ background-color:blue;
+ color:white;
+ }
+ p{
+  color:blue;
+ font-family:HYPost;
+ font-size:200%;
+ text-align:center;
+ font-weight:normal;
+ }

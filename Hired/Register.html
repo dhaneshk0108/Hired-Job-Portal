@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="register.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Hired | Sign up</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+function validatePwd() {
+
+var invalid = " "; 
+var minLength = 8; 
+var pwd1 = document.myForm.password.value;
+var pwd2 = document.myForm.password2.value;
+if (pwd1 == '' || pwd2 == '') {
+alert('Please enter your password twice.');
+return false;
+}
+if (document.myForm.password.value.length < minLength) {
+alert('Your password must be at least ' + minLength + ' characters long. Try again.');
+return false;
+}
+if (document.myForm.password.value.indexOf(invalid) > -1) {
+alert("Sorry, spaces are not allowed.");
+return false;
+}
+else if (pwd1 != pwd2) {
+alert ("You did not enter the same new password twice. Please re-enter your password.");
+return false;
+}
+}
+</script>
+</HEAD>
+<BODY>
+
+<section class="wrapper">
+ <ul class="tabs">
+    <li><a href="index.html">Find Jobs</a></li>
+    <li><a href="postjob.html">Post Job</a></li>
+ </ul>
+ <ul class="tabs2">
+	<li><a href="signin.html">Sign in</a></li>
+    <li><a href="Register.html">Register</a></li>
+ </ul>
+  <div class="clr"></div>
+<section class="block">
+  <article id="index.html">
+  
+<DIV ID="register">
+    <div>
+      <P>Create a Hired Account in just 2 steps</P>
+    </div>      
+	<h4>--------------------------------  Step 1  ---------------------------------<h4>
+	<DIV ID="FORM_NAME">
+      <DIV CLASS="FIRSTNAME">
+       <form name=myForm onSubmit="return validatePwd()" method="post" action='uploadfile1.php'>
+        First Name<INPUT TYPE="TEXT" NAME="name" CLASS="INPUT_NAME" id="topicname" required "autofocus"/>
+	  </DIV>
+	  <DIV CLASS="LASTNAME">
+        Last Name<INPUT TYPE="TEXT" NAME="lastname" CLASS="INPUT_NAME" required "autofocus"/>
+      </DIV>
+	  <DIV ID="EMAIL_FORM">
+        Email id<INPUT TYPE="EMAIL" NAME="email" CLASS="INPUT_EMAIL" required "autofocus"/>
+      </DIV>
+	  <DIV ID="PASSWORD_FORM">
+        Password<INPUT TYPE="PASSWORD" NAME="password" CLASS="INPUT_PASSWORD" required "autofocus"/>
+      </DIV>
+	  <DIV ID="PASSWORD_FORM">
+        Re-enter Password<INPUT TYPE="PASSWORD" NAME="password2" CLASS="INPUT_REENTER" required "autofocus"/>
+      </DIV>
+	  <DIV>
+        <P> <INPUT TYPE="SUBMIT" class="input_submit" value="Next" ></P>
+      </DIV>
+     </FORM>
+    </DIV>
+</DIV>
+</article>
+</section>
+</section>
+</BODY>
+</HTML>
